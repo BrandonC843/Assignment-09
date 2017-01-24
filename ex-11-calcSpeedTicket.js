@@ -23,11 +23,18 @@
 
 
 var calcSpeedTicket = function(input1, input2, input3){
-   if ((input1 >=20) && (input2 !== input1 + input3)){
-   }return true;
-
+   if (input2 - input1 <= 5){
+   return (0);
+}else if ((input2 - input1 < 20) && (input3 === true)){
+   return(150 * 2);
+}else if((input2 - input1 < 20) && (input3 === false)){
+   return (150);
+}else if ((input1 -input2 >= 20)&&(input3 ===true)){
+   return(250 *2);
+}else if ((input1 -input2 >= 20)&&(input3 ===false)){
+   return(250);
 }
-
+}
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*
 
